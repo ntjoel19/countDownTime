@@ -1,0 +1,15 @@
+<div>
+
+    <div class="card-header">
+        <p>Enter the code that has been sent to your email adress</p>
+        <p id="form-error" class="center-in-container">
+          remaining time : {{remainingTime?.minutes | setToZero | addZeros}}:{{remainingTime?.seconds | setToZero | addZeros}}</p>
+    </div>
+
+    <form >
+        
+        <input type="number" name="code" class="form-control" [(ngModel)]="activationCode" 
+            id="inputCode" placeholder="00000" />
+        <button (submit)="activate()">Submit</button>
+    </form>
+</div>

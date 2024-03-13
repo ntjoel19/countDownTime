@@ -1,0 +1,10 @@
+<div>
+    <form >
+        <!--Two ways binding with ngModel-->
+        <input type="text" placeholder="John" name="firstname" [(ngModel)]="firstname" />
+        <input type="text" placeholder="Doe" name="lastname" [(ngModel)]="lastname">
+        <input type="email" placeholder="email@mail.com" name="email" [(ngModel)]="email" />
+        <input type="password" placeholder="*******" name="password" [(ngModel)]="password">
+        <button (click)="signup()">Submit</button>
+    </form>
+</div>
